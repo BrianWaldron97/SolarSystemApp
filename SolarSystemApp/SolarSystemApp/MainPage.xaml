@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SolarSystemApp.MainPage">
+
+    <!-- Main stack layout with black background to resemble space -->
+    <StackLayout x:Name="SLContentPage" BackgroundColor="Black">
+        <!-- Scrollview for a cleaner look -->
+        <ScrollView Orientation="Horizontal">
+            <Grid x:Name="FirstGrid" HorizontalOptions="Start" Margin="10,10" WidthRequest="2000">
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <!-- All images made with paint.net -->
+
+                <!-- Image of the Sun -->
+                <Image x:Name="Sun" Source="sun.png" Grid.Row="1" Grid.Column="0">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapSun_Tapped" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <!-- Label for the names of each planet/sun -->
+                <Label Text="SUN" Grid.Row="2" Grid.Column="0" TextColor="White" FontSize="Large" HorizontalOptions="Center"/>
+
+
+                <!-- Image of Mercury -->
+                <Image x:Name="Mercury" Source="mercury.png" Grid.Row="1" Grid.Column="1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapMercury_Tapped" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <!-- Label for the names of each planet/sun -->
+                <Label Text="MERCURY" Grid.Row="2" Grid.Column="1" TextColor="White" FontSize="Large" HorizontalOptions="Center"/>
+
+
+                <!-- Image of Venus -->
+                <Image x:Name="Venus" Source="venus.png" Grid.Row="1" Grid.Column="2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapVenus_Tapped" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <!-- Label for the names of each planet/sun -->
+                <Label Text="VENUS" Grid.Row="2" Grid.Column="2" TextColor="White" FontSize="Large" HorizontalOptions="Center"/>
+
+
+                <!-- Image of Earth -->
+                <Image x:Name="Earth" Source="earth.png" Grid.Row="1" Grid.Column="3">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapEarth_Tapped" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <!-- Label for the names of each planet/sun -->
+                <Label Text="EARTH" Grid.Row="2" Grid.Column="3" TextColor="White" FontSize="Large" HorizontalOptions="Center"/>
+
+
+                <!-- Image of Mars -->
+                <Image x:Name="Mars" Source="mars.png" Grid.Row="1" Grid.Column="4">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapMars_Tapped" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <!-- Label for the names of each planet/sun -->
+                <Label Text="MARS" Grid.Row="2" Grid.Column="4" TextColor="White" FontSize="Large" HorizontalOptions="Center"/>
+
+
+                <!-- Image of Jupiter -->
+                <Image x:Name="Jupiter" Source="jupiter.png" Grid.Row="1" Grid.Column="5">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapJupiter_Tapped" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <!-- Label for the names of each planet/sun -->
+                <Label Text="JUPITER" Grid.Row="2" Grid.Column="5" TextColor="White" FontSize="Large" HorizontalOptions="Center"/>
+
+
+                <!-- Image of Saturn -->
+                <Image x:Name="Saturn" Source="saturn.png" Grid.Row="1" Grid.Column="6">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapSaturn_Tapped" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <!-- Label for the names of each planet/sun -->
+                <Label Text="SATURN" Grid.Row="2" Grid.Column="6" TextColor="White" FontSize="Large" HorizontalOptions="Center"/>
+
+
+                <!-- Image of Uranus -->
+                <Image x:Name="Uranus" Source="uranus.png" Grid.Row="1" Grid.Column="7">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapUranus_Tapped" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <!-- Label for the names of each planet/sun -->
+                <Label Text="URANUS" Grid.Row="2" Grid.Column="7" TextColor="White" FontSize="Large" HorizontalOptions="Center"/>
+
+
+                <!-- Image of Neptune -->
+                <Image x:Name="Neptune" Source="neptune.png" Grid.Row="1" Grid.Column="8">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="TapNeptune_Tapped" NumberOfTapsRequired="1"/>
+                    </Image.GestureRecognizers>
+                </Image>
+                <!-- Label for the names of each planet/sun -->
+                <Label Text="NEPTUNE" Grid.Row="2" Grid.Column="8" TextColor="White" FontSize="Large" HorizontalOptions="Center"/>
+
+
+
+            </Grid>
+
+        </ScrollView>
+
+    </StackLayout>
+
+</ContentPage>
